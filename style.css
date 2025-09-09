@@ -1,0 +1,233 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100vh;
+    font-size: clamp(16px, 1.5vw, 24px);
+    overflow: auto;
+    background-color: rgb(28,28,30);
+}
+
+a {
+    color: #ffffff;
+
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #929292;
+}
+/* 
+.LOGO{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    float:left
+} */
+
+.container {
+    height: 100vh;
+    position: relative;
+    overflow: auto;
+}
+
+.block {
+
+    position: absolute;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    overflow-wrap: anywhere;
+    font-weight: bold;
+    max-height: 100vh;
+}
+
+.block1 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%; /* Зменшена висота блоку 1 до 20% */
+    background-color: rgb(21, 21, 21);
+    text-align: center;
+}
+
+.block2 {
+    top: 20%; /* Додаємо відступ зверху */
+    left: 0;
+    height: 15%; /* Зменшена висота блоку 2 */
+    width: calc(25% - 10px); /* Вираховуємо ширину з урахуванням margin */
+    background-color: rgb(21, 21, 21);
+
+    float: left; /* Вирівнює блок2 ліворуч */
+}
+
+.block5 {
+    top: calc(35%);
+    left: 0;
+    height: 54.8%; /* Зменшуємо висоту блоку 5 */
+    width: calc(25% - 10px);
+    background-color: rgb(28,28,30);
+    padding-bottom: 30px;
+    margin-bottom: 20px; /* Додаємо відступ знизу */
+    float: left;
+
+}
+.block5 li, .block4 li{
+    color: white;
+    margin: 20px 0;       /* расстояние сверху и снизу между пунктами */
+    padding-left: 0px;   /* абзац (отступ слева внутри пункта) */
+    list-style-position: inside; /* маркер списка тоже заходит в отступ */
+      /* можешь увеличить или уменьшить шрифт */
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: clamp(14px, 2vw, 33px);
+}
+.block5 p {
+    font-size: clamp(14px, 2vw, 33px);
+    font-weight: bold;
+    color: white;
+    text-align: left;     /* заголовок слева */
+    padding-left: 20px;   /* абзац для заголовка */
+    margin-bottom: 15px;  /* отступ снизу от списка */
+}
+.block3 {
+    top: calc(20%); /* Змінюємо, щоб блок3 був під блоком 1 */
+    left: 24.4%; /* Додаємо відстань зліва */
+    width: calc(50.6%); /* Вираховуємо ширину з урахуванням margin */
+    height: 42.19%;
+    background-color: rgb(28,28,30); /* Додаємо відстань знизу для блоку 3 */
+}
+
+.block6 {
+    font-family: "Anton", sans-serif;
+    font-size: clamp(13px, 2vw, 32px); 
+    position: absolute;         /* не забываем для top/left */
+    top: calc(60% + 20px);
+    left: 24.4%;
+    width: calc(50.6%);
+    height: calc(28%);
+    background-color: #000000;
+    color: white;
+
+    /* --- вот важные изменения --- */
+    white-space: normal;        /* разрешаем перенос строк */
+    overflow-y: auto;           /* вертикальный скролл при переполнении */
+    overflow-x: hidden;         /* горизонтального скролла не будет */
+
+    padding: 10px;              /* чтобы текст не лип к краям */
+    box-sizing: border-box;
+}
+.block6 h1 {
+    font-size: clamp(20px, 2.5vw, 40px);
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.block4 {
+    top: 20%;
+    left: 75%;
+    width: 25%;
+    height: calc(70% + 10px);
+    max-height: 100%;
+    background-color: rgb(28,28,30);;
+    text-align: center;
+    padding: 0;
+    color: white;
+
+}
+
+.block4 h2 {
+    font-size: clamp(18px, 2vw, 36px);
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Montserrat Bold', sans-serif;
+}
+
+.block7 {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(21, 21, 21);
+    text-align: center;
+    margin-top: 10px; /* Add margin here to increase the gap */
+}
+
+.block img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blockX, .blockY{
+    font-size: 2vw;
+    color: white;
+    padding: 1vh 2vw; 
+    position: absolute;
+    display: inline-block;
+    font-family: "Anton", sans-serif;
+    max-width: 80%;
+    text-align: center;
+    overflow: auto;
+    box-sizing: border-box;
+
+}
+.LOGO{
+    font-size: 2vw;
+    padding: 6vh 4vw; 
+    position: absolute;
+    display: inline-block;
+    font-family: "Anton", sans-serif;
+    max-width: 100%;
+    text-align: center;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.blockX {
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+        font-size: clamp(20px, 4vw, 60px);
+}
+
+.blockY {
+    bottom: 50%;
+    right: 10px;
+    transform: translateY(50%);
+    font-size: clamp(28px, 4vw, 60px);
+
+}
+
+ol, ul {
+    padding-left: 1rem; 
+    margin: 0 auto;
+    max-width: 80%; 
+    text-align: left;
+    max-height: 100%;
+    overflow: auto;
+}
+
+ol {
+    list-style-type: decimal;
+
+}
+
+ul {
+    list-style-type: disc;
+
+}
