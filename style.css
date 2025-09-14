@@ -56,38 +56,37 @@ a:hover {
     top: 0;
     left: 0;
     width: 100%;
-    height: 20%; /* Зменшена висота блоку 1 до 20% */
+    height: 20%; 
     background-color: rgb(21, 21, 21);
     text-align: center;
 }
 
 .block2 {
-    top: 20%; /* Додаємо відступ зверху */
+    top: 20%; 
     left: 0;
-    height: 15%; /* Зменшена висота блоку 2 */
-    width: calc(25% - 10px); /* Вираховуємо ширину з урахуванням margin */
+    height: 15%; 
+    width: calc(25% - 10px); 
     background-color: rgb(21, 21, 21);
 
-    float: left; /* Вирівнює блок2 ліворуч */
+    float: left;
 }
 
 .block5 {
     top: calc(35%);
     left: 0;
-    height: 54.8%; /* Зменшуємо висоту блоку 5 */
+    height: 54.8%;
     width: calc(25% - 10px);
     background-color: rgb(28,28,30);
     padding-bottom: 30px;
-    margin-bottom: 20px; /* Додаємо відступ знизу */
+    margin-bottom: 20px;
     float: left;
 
 }
 .block5 li, .block4 li{
     color: white;
-    margin: 20px 0;       /* расстояние сверху и снизу между пунктами */
-    padding-left: 0px;   /* абзац (отступ слева внутри пункта) */
-    list-style-position: inside; /* маркер списка тоже заходит в отступ */
-      /* можешь увеличить или уменьшить шрифт */
+    margin: 20px 0;   
+    padding-left: 0px;  
+    list-style-position: inside; 
     margin-bottom: 1rem;
     margin-top: 1rem;
     font-size: clamp(14px, 2vw, 33px);
@@ -96,22 +95,22 @@ a:hover {
     font-size: clamp(14px, 2vw, 33px);
     font-weight: bold;
     color: white;
-    text-align: left;     /* заголовок слева */
-    padding-left: 20px;   /* абзац для заголовка */
-    margin-bottom: 15px;  /* отступ снизу от списка */
+    text-align: left; 
+    padding-left: 20px;  
+    margin-bottom: 15px; 
 }
 .block3 {
-    top: calc(20%); /* Змінюємо, щоб блок3 був під блоком 1 */
-    left: 24.4%; /* Додаємо відстань зліва */
-    width: calc(50.6%); /* Вираховуємо ширину з урахуванням margin */
+    top: calc(20%);
+    left: 24.4%; 
+    width: calc(50.6%); 
     height: 42.19%;
-    background-color: rgb(28,28,30); /* Додаємо відстань знизу для блоку 3 */
+    background-color: rgb(28,28,30); 
 }
 
 .block6 {
     font-family: "Anton", sans-serif;
     font-size: clamp(13px, 2vw, 32px); 
-    position: absolute;         /* не забываем для top/left */
+    position: absolute;        
     top: calc(60% + 20px);
     left: 24.4%;
     width: calc(50.6%);
@@ -119,12 +118,12 @@ a:hover {
     background-color: #000000;
     color: white;
 
-    /* --- вот важные изменения --- */
-    white-space: normal;        /* разрешаем перенос строк */
-    overflow-y: auto;           /* вертикальный скролл при переполнении */
-    overflow-x: hidden;         /* горизонтального скролла не будет */
 
-    padding: 10px;              /* чтобы текст не лип к краям */
+    white-space: normal;      
+    overflow-y: auto;           
+    overflow-x: hidden;       
+
+    padding: 10px;             
     box-sizing: border-box;
 }
 .block6 h1 {
@@ -161,7 +160,7 @@ a:hover {
     height: 10%;
     background-color: rgb(21, 21, 21);
     text-align: center;
-    margin-top: 10px; /* Add margin here to increase the gap */
+    margin-top: 10px; 
 }
 
 .block img {
@@ -231,3 +230,4 @@ ul {
     list-style-type: disc;
 
 }
+
