@@ -79,7 +79,7 @@ a:hover {
     list-style-position: inside; 
     margin-bottom: 1rem;
     margin-top: 1rem;
-    font-size: clamp(5px, 0.5vw, 33px);
+    font-size: clamp(1px, 0.5vw, 33px);
 }
 .block5 p {
     font-size: clamp(14px, 2vw, 33px);
@@ -210,6 +210,7 @@ ul {
     list-style-type: disc;
 
 }
+
 
 
 
