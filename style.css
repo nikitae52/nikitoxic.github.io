@@ -145,7 +145,7 @@ a:hover {
 
 .blockX {
     position: relative;
-    top: 50%;
+    top: 20%;
 }
 
 .blockY {
@@ -168,4 +168,5 @@ ol {
 ul {
     list-style-type: disc;
 }
+
 
